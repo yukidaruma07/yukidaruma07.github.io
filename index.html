@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+        .base_parent {
+            margin: 20px;
+        }
+
+        .box {
+            border-radius: 10px;
+            background: aliceblue;
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .box_childParent {
+            display: flex;
+        }
+
+        .box_child {
+            width: 50%;
+        }
+
+        .box_leftText {
+            font-family: "Noto Sans JP", serif;
+            font-weight: bold;
+            font-size: 20px;
+            color: #2a2a2c;
+        }
+
+        .box_rightText {
+            font-family: "Noto Sans JP Black", serif;
+            font-size: 22px;
+            color: gray;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/menu.css">
+</head>
+<body>
+
+<nav class="menu_nav">
+    <ul class="menu_ul">
+        <li class="menu_li"><a href="index.html">ホーム</a></li>
+        <li class="menu_li"><a href="">制作物</a></li>
+    </ul>
+</nav>
+
+<div class="base_parent">
+
+    <div class="box">
+        <div class="box_childParent">
+            <div class="box_rightText" style="width: 50%; font-size: 25px; color: #2a2a2c; margin: 5px">自己紹介</div>
+            <div class="box_rightText" style="width: 50%;font-size: 25px; color: #2a2a2c; margin: 5px">プロフィール</div>
+        </div>
+
+        <div class="box_childParent">
+            <div class="box_child">
+                学生の見習いエンジニアです。よろしくお願いいたします。
+            </div>
+
+            <div class="box_child">
+                <div><span class="box_leftText">生まれ　<span class="box_rightText">東北</span></span></div>
+                <div><span class="box_leftText">誕生日　<span class="box_rightText">2007年</span></span></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
