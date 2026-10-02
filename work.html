@@ -10,6 +10,7 @@
         }
 
         .box {
+            margin-bottom: 20px;
             background: #cff8f8;
             font-family: "Noto Sans JP Black", serif;
         }
@@ -22,6 +23,8 @@
 
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/menu.css">
+
+    <script type="module" src="./script/main.js"></script>
 </head>
 <body>
 
@@ -34,18 +37,49 @@
 
 <div class="base_parent">
     <div class="box">
+        <form>
+            <input class="input_word" type="text" style="width: 80%; margin-left: auto; margin-right: auto; display: flex;">
+        </form>
 
-        <div style="display: flex;">
+        <button data-filter="All" class="button tag_button" style="background: gray; color: white; margin: 5px;">全て</button>
+        <button data-filter="Java" class="button tag_button" style="background: #ee921c; color: white; margin: 5px;">Java</button>
+        <button data-filter="Python" class="button tag_button" style="background: #092ee1; color: white; margin: 5px;">Python</button>
+        <button data-filter="Kotlin" class="button tag_button" style="background: #b288dc; color: white; margin: 5px;">Kotlin</button>
+        <button data-filter="C++" class="button tag_button" style="background: #f14a7c; color: white; margin: 5px;">C++</button>
+        <button data-filter="HLSL" class="button tag_button" style="background: #8bd1a0; color: white; margin: 5px;">HLSL</button>
+        <button data-filter="C#" class="button tag_button" style="background: #39874d; color: white; margin: 5px;">C#</button>
+        <button data-filter="PHP" class="button tag_buttoSn" style="background: #7878af; color: white; margin: 5px;">PHP</button>
+        <button data-filter="Ruby" class="button tag_button" style="background: #f63737; color: white; margin: 5px;">Ruby</button>
+        <button data-filter="Go" class="button tag_button" style="background: #21b9e8; color: white; margin: 5px;">Go</button>
+        <button data-filter="Rust" class="button tag_button" style="background: #141415; color: white; margin: 5px;">Rust</button>
+        <button data-filter="CUDA" class="button tag_button" style="background: #92c243; color: white; margin: 5px;">CUDA</button>
+        <button data-filter="HTML・CSS" class="button tag_button" style="background: linear-gradient(90deg, #f0b023, #632ae4); color: white; margin: 5px;">HTML・CSS</button>
+        <button data-filter="HTML・CSS" class="button tag_button" style="background: linear-gradient(90deg, #f0b023, #092ee1); color: white; margin: 5px;">JavaScript・TypeScript</button>
+        <br>
+        <button data-filter="DirectX" class="button tag_button" style="background: gray; color: white; margin: 5px;">DirectX</button>
+        <button data-filter="fbxsdk" class="button tag_button" style="background: gray; color: white; margin: 5px;">fbxsdk</button>
+        <button data-filter="Android" class="button tag_button" style="background: gray; color: white; margin: 5px;">Android</button>
+        <button data-filter="JavaFX" class="button tag_button" style="background: gray; color: white; margin: 5px;">JavaFX</button>
+        <button data-filter="WPF" class="button tag_button" style="background: gray; color: white; margin: 5px;">WPF</button>
+        <button data-filter="ASP.NET" class="button tag_button" style="background: gray; color: white; margin: 5px;">ASP.NET</button>
+    </div>
+
+    <div class="box">
+
+        <div class="tag_item" data-tag="C++,DirectX,fbxsdk,HLSL" style="display: flex;">
             <div style="width: 50%;">
-                <div>3D_ModelViewer_DirectX</div>
+                <div class="tag_name">3D_ModelViewer_DirectX</div>
                 <div style="color: gray;">DirectXで制作されたモデルビュワーです。</div>
 
                 <a href="https://github.com/yukidaruma07/3D_ModelViewer_DirectX">
                     <button class="button" style="background: gray; color: white; margin: 5px;">GitHub</button>
                 </a>
+
+                <div>言語：C++, HLSL</div>
+                <div>タグ：DirectX, fbxsdk</div>
             </div>
 
-            <img style="width: 50%;" src="https://opengraph.githubassets.com/1/yukidaruma07/3D_ModelViewer_DirectX">
+            <img style="width: 50%;" src="https://opengraph.githubassets.com/2/yukidaruma07/3D_ModelViewer_DirectX">
         </div>
     </div>
 </div>
